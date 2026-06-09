@@ -1,0 +1,25 @@
+print("MINI SUDOKU GAME")
+board = [
+    [5, 3, 4],
+    [6, 7, 2],
+    [1, 9, 8]
+]
+
+print("Sudoku Grid")
+
+for row in board:
+    print(row)
+
+num = int(input("Enter a number to search: "))
+
+found = False
+
+for row in board:
+    if num in row:
+        found = True
+        break
+
+if found:
+    print("Number Found!")
+else:
+    print("Number Not Found!")
